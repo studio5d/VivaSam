@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Selected Photos - Studio 5D Photography</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta property="og:title" content="Selected Photos - Studio 5D Photography">
+  <meta property="og:image" content="img/Select/IMG_8522.JPG">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="selected-page">
+  <div class="selected">
+    <div class="selected-header">
+      <div class="header-top">
+        <img src="img/logo.png" alt="Studio 5D Photography Logo" class="header-logo">
+        <h1>Selected Images (<span id="selected-count">0</span>)</h1>
+      </div>
+      <button id="back-btn" class="back-btn">Back to Gallery</button>
+    </div>
+
+    <div id="selected-grid" class="selected-grid">
+      <!-- Selected images will be loaded here -->
+    </div>
+
+    <div class="submission-form">
+      <h2>Submit Your Selection</h2>
+      <form id="submit-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="contact">Contact</label>
+          <input type="text" id="contact" name="contact" required placeholder="Email or phone">
+        </div>
+        <button type="submit" class="submit-btn">Submit Selection</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="images.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

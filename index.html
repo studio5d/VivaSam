@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Studio 5D Photography</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta name="description" content="Studio 5D Photography - Capturing Moments, Creating Memories">
+  <meta property="og:title" content="Studio 5D Photography">
+  <meta property="og:description" content="Capturing Moments, Creating Memories">
+  <meta property="og:image" content="img/Select/IMG_8522.JPG">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="img/Select/IMG_8522.JPG">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <img id="intro-img" src="img/Select/IMG_8522.JPG" alt="Studio 5D Photography background" class="intro-img" loading="eager">
+    <div class="intro-overlay">
+      <div class="intro-logo">
+        <img src="img/logo.png" alt="Studio 5D Photography Logo" class="intro-logo-img">
+      </div>
+      <div class="intro-content">
+        <h1 class="logo">Studio 5D Photography</h1>
+        <p class="tagline">Capturing Moments, Creating Memories</p>
+      </div>
+      <button id="enter-btn" class="enter-btn" type="button" onclick="location.href='gallery.html'">Enter Gallery</button>
+    </div>
+  </div>
+
+  <!-- Audio elements for slideshow and selection music -->
+  <audio id="intro-music" loop volume="1.0">
+    <source src="music/intro-background.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="selection-music" loop volume="1.0">
+    <source src="music/selection-background.mp3" type="audio/mpeg">
+  </audio>
+  <div id="music-control" class="music-control">
+    <button id="music-toggle" class="music-toggle" title="Toggle Music">🔊</button>
+  </div>
+
+  <script src="images.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

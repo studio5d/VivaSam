@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Studio 5D - Gallery</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <meta property="og:title" content="Studio 5D - Gallery">
+  <meta property="og:image" content="img/Select/IMG_8522.JPG">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gallery">
+    <!-- Modern Header -->
+    <header class="gallery-header">
+      <div class="header-container">
+        <div class="header-brand">
+          <img src="img/logo.png" alt="Studio 5D Logo" class="header-logo">
+          <div class="brand-text">
+            <h1 class="brand-title">Studio 5D</h1>
+            <p class="brand-subtitle">Gallery</p>
+          </div>
+        </div>
+        <div class="header-controls">
+          <div class="selection-info">
+            <span class="selection-badge" id="selection-count">
+              <i class="fas fa-check-circle"></i> 0
+            </span>
+            <button id="view-selected-btn" class="btn btn-primary">
+              <i class="fas fa-images"></i> View Selected
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header-divider"></div>
+    </header>
+
+    <!-- Gallery Grid -->
+    <main class="gallery-content">
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Images will be loaded here -->
+      </div>
+    </main>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <p><strong>Studio 5D</strong></p>
+          <p class="footer-subtitle">studio 5D</p>
+        </div>
+        <div class="footer-section">
+          <p>🔒 All images protected with watermarks</p>
+          <a href="https://www.instagram.com/studio5dnig" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i> Follow on Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copyright">© 2026 Studio 5D. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Audio element for gallery selection music -->
+  <audio id="selection-music" loop volume="1.0">
+    <source src="music/selection-background.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Modern Modal for enlarged image -->
+  <div id="modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-number">
+          <span id="modal-number"></span>
+        </div>
+        <button class="modal-close close" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <img id="modal-img" src="" alt="">
+    </div>
+  </div>
+
+  <script src="images.js"></script>
+  <script src="watermark.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
